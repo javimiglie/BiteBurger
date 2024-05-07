@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Bite Burger - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  bg-gradient transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="imgLogo" src="../media/images/logo.png" width="45px" height="45px" alt="Logo Empresa">
+                </a>
+                <h1>BITE BURGER</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link optionMenu" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link optionMenu" href="./menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link optionMenu" href="./locales.html">LOCALES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link optionMenu" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2>SABOR QUE <br>MUERDE</h2>
+    </header>
+    <main>
+        <section class="formulario">
+            <div>
+                <h3>CONTACTO</h3>
+            </div>
+            <div class="conteinerForm" novalidate>
+                <form class="row g-3 mt-3 needs-validation" novalidate>
+                    <div class="col-6">
+                        <label for="nameInput" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Ingrese su nombre" required> 
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">Es necesario colocar tu nombre</div>
+                    </div>
+                    <div class="col-6">
+                        <label for="surNameInput" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="surNameInput" placeholder="Ingrese su Apellido" required>
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">Es necesario colocar tu apeliido</div> 
+                    </div>
+                    <div class="col-6">
+                        <label for="telInput" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telInput" placeholder="Ingrese su teléfono" required>
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">No te olvides de colocar tu teléfono</div>
+                    </div>
+                    <div class="col-6">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Ingrese su Email" required>
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">No te olvides de colocar tu email</div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddres" placeholder="Ingrese su dirección" required>
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">Es necesario tu dirección</div>
+                    </div>
+                    <div class="col-12">
+                        <label for="areaInput" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="areaInput" placeholder="Escriba su mensaje" required></textarea>
+                        <div class="valid-feedback">Vamos bien</div>
+                        <div class="invalid-feedback">Por favor es necesario que nos dejes un mensaje</div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">
+                            Enviar formulario
+                        </button>
+                        <button type="reset" class="btn btn-danger">
+                            Borrar formulario
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+            
+    </main>
+    <footer>
+        <p class="txtFooter">
+            ©2024 - Todos los derechos reservados - Javier Miglierini
+        </p>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="imgFooter" src="../media/images/wsp.png" alt=""></a>
+    </footer>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url(../media/images/banner-hamburguesas.jpeg);
+    background-size: cover;
+    height: 500px;
+    box-shadow: 0px 8px 17px 1px rgba(240, 255, 24, 0.76);
+    -webkit-box-shadow: 0px 8px 17px 1px rgba(240, 255, 24, 0.76);
+    -moz-box-shadow: 0px 8px 17px 1px rgba(240, 255, 24, 0.76);
+
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.imgLogo {
+    filter: drop-shadow(5px 5px 10px #f0ff18);
+    position: relative;
+    bottom: 7px;
+}
+
+h1 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.optionMenu {
+    font-size: 20px;
+    color: white;
+}
+
+.optionMenu:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f0ff18, 0 0 30px #f0ff18, 0 0 40px #f0ff18, 0 0 55px #f0ff18, 0 0 75px #f0ff18, 2px 2px 2px rgba(255, 251, 0, 0), 2px 2px 2px rgba(255, 251, 0, 0);
+}
+
+.active {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f0ff18, 0 0 30px #f0ff18, 0 0 40px #f0ff18, 0 0 55px #f0ff18, 0 0 75px #f0ff18, 2px 2px 2px rgba(255, 251, 0, 0), 2px 2px 2px rgba(255, 251, 0, 0);
+    font-weight: bold;
+}
+
+h2 {
+    text-align: right;
+    padding-right: 250px;
+    padding-top: 100px;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-size: 60px;
+    animation-duration: 1s;
+    animation-name: titilar;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titilar {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10PX #f0ff18, 0 0 20PX #f0ff18, 0 0 30PX #f0ff18;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.menuNosotros {
+    margin: 10px auto;
+    width: 80%;
+}
+
+h3 {
+    margin: 30px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+}
+
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "imgNosotros1 imgNosotros1 txtNosotros txtNosotros txtNosotros"
+        "imgNosotros1 imgNosotros1 txtNosotros txtNosotros txtNosotros"
+        "imgNosotros1 imgNosotros1 imgNosotros2 imgNosotros3 imgNosotros4"
+    ;
+}
+
+
+.imgNosotros1 {
+    width: 100%;
+    grid-area: imgNosotros1;
+}
+
+.txtNosotros {
+    grid-area: txtNosotros;
+    letter-spacing: 3px;
+}
+
+.imgNosotros2 {
+
+    grid-area: imgNosotros2;
+}
+
+.imgNosotros3 {
+    grid-area: imgNosotros3;
+}
+
+.imgNosotros4 {
+    grid-area: imgNosotros4;
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
+.promos {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+
+.card {
+    background-color: black;
+    outline: 1px solid;
+    transition: outline 1s ease 0s;
+}
+
+.card:hover {
+    outline: 1px solid #ff0000;
+}
+
+
+.card-title {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+small {
+    color: rgb(240, 53, 53);
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    background-image: url(../media/images/footer.jpg);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+
+}
+
+.txtFooter {
+    margin: auto;
+    font-size: 20px;
+}
+
+.imgFooter {
+    justify-content: end;
+    width: 100px;
+    filter: drop-shadow(5px 5px 10px #48ff00);
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 100;
+}
+
+.formulario {
+    width: 90%;
+    min-height: 600px;
+    margin: 10px auto;
+    background-image: url(../media/images/formimg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* .conteinerForm {
+    background-color: transparent;
+} */
+
+.form-control {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 10px #f0ff18;
+    text-shadow: 1px 1px 1px white;
+}
+
+.form-control:focus {
+    background-color: transparent;
+
+}
+
+button {
+    margin-right: 20px;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 1s ease;
+}
+
+.btn-danger:hover {
+    box-shadow: 0 4px 16px rgb(250, 17, 0);
+    transition: all 1s ease;
+}

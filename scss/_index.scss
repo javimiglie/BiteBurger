@@ -1,0 +1,127 @@
+main {
+    .menuNosotros {
+        margin: 10px auto;
+        width: 80%;
+
+        h3 {
+            margin: 30px;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .contenedorNosotros {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            grid-template-areas:
+                "imgNosotros1 imgNosotros1 txtNosotros txtNosotros txtNosotros"
+                "imgNosotros1 imgNosotros1 txtNosotros txtNosotros txtNosotros"
+                "imgNosotros1 imgNosotros1 imgNosotros2 imgNosotros3 imgNosotros4"
+            ;
+
+            .imgNosotros1 {
+                width: 100%;
+                grid-area: imgNosotros1;
+            }
+
+            .txtNosotros {
+                font-family: "Rowdies", sans-serif;
+                font-weight: 300;
+                grid-area: txtNosotros;
+                letter-spacing: 3px;
+            }
+
+            .imgNosotros2 {
+                grid-area: imgNosotros2;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            .imgNosotros3 {
+                grid-area: imgNosotros3;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            .imgNosotros4 {
+                grid-area: imgNosotros4;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            .imgNosotros4 {
+                grid-area: imgNosotros4;
+
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .carousel {
+        margin-top: 100px;
+    }
+
+    .promos {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+
+        h3 {
+            margin: 30px;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        div {
+            .card {
+                background-color: black;
+                outline: 1px solid;
+                transition: outline 1s ease 0s;
+
+                &:hover {
+                    outline: 1px solid #ff0000;
+                }
+
+                .card-body {
+                    .card-title {
+                        font-family: "Rowdies", sans-serif;
+                        font-weight: 400;
+                        color: white;
+                    }
+
+                    .card-text {
+                        font-family: "Rowdies", sans-serif;
+                        font-weight: 300;
+                        color: white;
+                    }
+                }
+
+                .card-footer {
+                    color: rgb(240, 53, 53);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
